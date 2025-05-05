@@ -13,10 +13,10 @@ export const Header = () => {
             <div className='flex space-x-8'>
                 <ul className='flex space-x-4 items-center text-[#5A5A5A]'>
                     <li>
-                        <a href="" className='hover:text-black'>Início</a>
+                        <a href="" className='hover:text-black'><strong>Início</strong></a>
                     </li>
                     <li>
-                        <a href="" className='hover:text-black'>Sobre Nós</a>
+                        <a href="#sobre-nos" className='hover:text-black'>Sobre Nós</a>
                     </li>
                 </ul>
                 <div className='bg-[#4CAF4F] hover:bg-[#439A45] duration-150 ease-in-out text-white p-3 rounded-md cursor-pointer'>
