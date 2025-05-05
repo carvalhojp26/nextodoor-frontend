@@ -6,7 +6,7 @@ export const Header = () => {
         <div className=' h-20 w-full font-[Inter] flex justify-between px-24 items-center'>
             <div>
                 <a href="" className='flex items-center'>
-                    <img src="/logo.png" alt="" />
+                    <img src="/icon.png" alt="" className='w-[40px] h-[40px]' />
                     <h1 className='font-bold text-[#5A5A5A] text-xl'>NextDoor</h1>
                 </a>
             </div>
