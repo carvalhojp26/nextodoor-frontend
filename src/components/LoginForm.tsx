@@ -32,7 +32,7 @@ export default function LoginForm () {
         
 
     return (
-        <div className="border w-[400px] h-[500px] rounded-lg flex items-center flex-col">
+        <div className=" w-[400px] h-[500px] rounded-lg flex items-center flex-col bg-white">
             <h1 className="mt-10 text-[24px]">Entrar</h1>
             <form className="mt-15" onSubmit={handleSubmit}>
                 <div className="flex flex-col ">

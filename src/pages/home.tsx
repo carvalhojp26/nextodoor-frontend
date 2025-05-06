@@ -14,9 +14,11 @@ export const Home = () => {
             ganhe <span className="text-[#4CAF4F]">recompensas</span>
           </h1>
           <p className="text-[#717171] mt-4">Crie ou realize tarefas, ajuste à sua necessidade</p>
-          <button className="mt-6 bg-[#4CAF4F] text-white px-6 py-3 rounded hover:bg-[#439A45] transition cursor-pointer">
-            Entrar
-          </button>
+          <a href="/login">
+            <button className="mt-6 bg-[#4CAF4F] text-white px-6 py-3 rounded hover:bg-[#439A45] transition cursor-pointer">
+              Entrar
+            </button>
+          </a>
         </div>
         <div className="flex-1">
           <img src="/hero.png" alt="Vizinhaça" className="w-full max-w-md mx-auto" />
