@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles.css";
 
 export const Header = () => {
@@ -23,7 +24,7 @@ export const Header = () => {
           </li>
         </ul>
         <div className="bg-[#4CAF4F] hover:bg-[#439A45] duration-150 ease-in-out text-white p-3 rounded-md cursor-pointer">
-          <a href="" className="font-light">
+          <a href="/register" className="font-light">
             Registre-se
           </a>
         </div>
