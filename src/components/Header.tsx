@@ -1,4 +1,3 @@
-import React from 'react';
 import "../styles.css";
 
 export const Header = () => {
@@ -6,7 +5,7 @@ export const Header = () => {
         <div className=' h-20 w-full font-[Inter] flex justify-between px-24 items-center'>
             <div>
                 <a href="" className='flex items-center'>
-                    <img src="/icon.png" alt="" className='w-[40px] h-[40px]' />
+                    <img src="/logo.png" alt="" />
                     <h1 className='font-bold text-[#5A5A5A] text-xl'>NextDoor</h1>
                 </a>
             </div>
