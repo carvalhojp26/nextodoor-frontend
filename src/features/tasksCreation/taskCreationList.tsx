@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { fetchTasks } from './taskService';
-import { Tarefa } from './types';
-import TaskCard from './taskCard';
+import { fetchTasks } from './taskCreationService';
+import { criacaoTarefa } from './taskCreationTypes';
+import TaskCard from './taskCreationCard';
 
 const TaskList: React.FC = () => {
-  const [tasks, setTasks] = useState<Tarefa[]>([]);
+  const [tasks, setTasks] = useState<criacaoTarefa[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
