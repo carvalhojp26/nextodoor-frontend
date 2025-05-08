@@ -7,20 +7,30 @@ export interface Endereco {
 }
 
 export interface Utilizador {
+  idUtilizador: number;
   nomeUtilizador: string;
   Endereco: Endereco;
 }
 
 export interface CategoriaTarefa {
+  idCategoriaTarefa: number;
   categoriaTarefa: string;
   pontosCategoria: number;
 }
 
-export interface Tarefa {
+export interface criacaoTarefa {
+  idTarefaCriada: number;
   nomeTarefa: string;
   dataInicio: string;
   dataFim: string;
   descricaoTarefa: string;
   Utilizador: Utilizador;
   categoriaTarefa: CategoriaTarefa;
+  estadoCriacaoTarefa: estadoCriacaoTarefa;
 }
+
+export interface estadoCriacaoTarefa {
+  idEstadoCriacaoTarefa: number;
+  estadoCriacaoTarefa: string;
+}
+
