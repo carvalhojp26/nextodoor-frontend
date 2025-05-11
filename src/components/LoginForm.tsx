@@ -40,7 +40,7 @@ export default function LoginForm () {
                     <input type="text" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} className="w-[300px] h-[50px] border rounded-lg border-[#C1C1C1] p-2"/>
                     <label htmlFor="" className="mt-5">Senha</label>
                     <input type="password" placeholder="Senha" value={password} onChange={e => setPassword(e.target.value)} className="w-[300px] h-[50px] border rounded-lg border-[#C1C1C1] p-2"/>
-                    <a href="" className="text-[12px] text-[#828282]">És novo? Registe-se</a>
+                    <a href="/register" className="text-[12px] text-[#828282]">És novo? Registe-se</a>
                 </div>
                 <button type="submit" className="bg-[#4CAF4F] cursor-pointer mt-10 w-[300px] h-[50px] rounded-lg text-white text-[16px] hover:bg-[#439A45] duration-150 ease-in-out">Entrar</button>
             </form> 
