@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import PrivateRoute from './auth/privateRoute'
 import { Home } from "./pages/home"
 import { Login } from "./pages/login"
+import TasksPage from "./pages/tasksPage"
 import { Register } from "./pages/register"
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />}></Route>
 				<Route path="/login" element={<Login />}></Route>
+				<Route path="/tasks" element={<TasksPage />}></Route>
 				<Route path="/register" element={<Register/>}></Route>
 			</Routes>
     	</BrowserRouter>
