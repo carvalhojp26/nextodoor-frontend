@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import React from 'react';
 import { criacaoTarefa } from './taskCreationTypes';
 import {createTaskRealization} from "../taskRealization/taskRealizationService"
+import { updateTaskCreationStatus } from "./taskCreationService";
 
 interface TaskCreationModalProps {
   task: criacaoTarefa;
@@ -23,16 +24,19 @@ const TaskModal: React.FC<TaskCreationModalProps> = ({ task, onClose }) => {
     }, 300);
   };
 
-  const handleRealizar = async () => {
+  const handleTaskRealization = async () => {
     try {
       await createTaskRealization({
-        criacaoTarefaidTarefaCriada: task.idTarefaCriada,
-        estadoRealizacaoTarefaidEstadoRealizacaoTarefa: 3,
+        criacaoTarefaidTarefaCriada: task.idTarefaCriada
       });
+  
+      await updateTaskCreationStatus(task.idTarefaCriada, 3); //Aceite
+    //
+  
       alert("Now you can see your task in execution on the page running task");
       handleClose();
     } catch (error: any) {
-      alert(error.message); //Mensagem de erro vem com o erro do backend, caso o criador da tarefa seja igual ao realizador da tarefa/utilizador logado
+      alert(error.message);
     }
   };
 
@@ -71,7 +75,7 @@ const TaskModal: React.FC<TaskCreationModalProps> = ({ task, onClose }) => {
         {/* Botão Realizar */}
         <div className="flex justify-end">
           <button
-            onClick={handleRealizar}
+            onClick={handleTaskRealization}
             className="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg transition"
           >
             Realizar

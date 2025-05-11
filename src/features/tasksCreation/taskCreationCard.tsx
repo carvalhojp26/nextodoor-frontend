@@ -1,7 +1,7 @@
 // src/components/tasks/TaskCard.tsx
 import React, { useState } from 'react';
 import { criacaoTarefa } from './taskCreationTypes';
-import TaskModal from './taskCreationModal';  
+import TaskModal from './taskCreationInfoModal';  
 
 const getCategoryAccentColor = (categoria: string): string => {
   switch (categoria) {

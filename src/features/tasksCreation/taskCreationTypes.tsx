@@ -9,10 +9,11 @@ export interface Endereco {
 export interface Utilizador {
   idUtilizador: number;
   nomeUtilizador: string;
+  pontosUtilizador: number;
   Endereco: Endereco;
 }
 
-export interface CategoriaTarefa {
+export interface categoriaTarefa {
   idCategoriaTarefa: number;
   categoriaTarefa: string;
   pontosCategoria: number;
@@ -25,7 +26,7 @@ export interface criacaoTarefa {
   dataFim: string;
   descricaoTarefa: string;
   Utilizador: Utilizador;
-  categoriaTarefa: CategoriaTarefa;
+  categoriaTarefa: categoriaTarefa;
   estadoCriacaoTarefa: estadoCriacaoTarefa;
 }
 
@@ -34,3 +35,10 @@ export interface estadoCriacaoTarefa {
   estadoCriacaoTarefa: string;
 }
 
+export interface CreateTaskPayload {
+  nomeTarefa: string;
+  dataInicio: string;
+  dataFim: string;
+  descricaoTarefa: string;
+  categoriaTarefaidCategoriaTarefa: number;
+}
